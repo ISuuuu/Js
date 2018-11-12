@@ -21,6 +21,13 @@ function skin2()
     var ol=document.getElementById('lnk1');
     ol.href='css2.css';
 }
+function setText()
+{
+    var v1=document.getElementById('txt1');
+    v1.value='Hello World';
+    v1.title="Title";
+
+}
 </script>
 <link  id="lnk1" rel="stylesheet" type="text/css" href="css1.css"/>
 </head>
@@ -28,6 +35,9 @@ function skin2()
 <body>
 <input type="button" value="皮肤1" onclick="skin1()">
 <input type="button" value="皮肤2" onclick="skin2()">
+
+<input id='txt1' type="text">
+<input id="div2" type="button" value="改文字" onclick="setText()"> 
 
     
 </body>
