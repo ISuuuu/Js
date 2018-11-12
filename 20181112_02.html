@@ -1,0 +1,36 @@
+<!DOCTYPE Html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> 文档</title>
+    <style>
+        #div1{width: 200px;height: 100px; background: #cccccc;border: 1px solid rgb(175, 131, 131);
+display: none;}
+#div2{width: 200px;height: 100px; background: #cccccc;border: 1px solid rgb(175, 131, 131);
+display: block;}
+</style>
+<script>
+function skin1()
+{
+    var ol=document.getElementById('lnk1');
+    ol.href='css1.css';
+}
+function skin2()
+{
+    var ol=document.getElementById('lnk1');
+    ol.href='css2.css';
+}
+</script>
+<link  id="lnk1" rel="stylesheet" type="text/css" href="css1.css"/>
+</head>
+
+<body>
+<input type="button" value="皮肤1" onclick="skin1()">
+<input type="button" value="皮肤2" onclick="skin2()">
+
+    
+</body>
+
+
+</html>

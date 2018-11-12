@@ -1,0 +1,42 @@
+<!DOCTYPE Html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> 文档</title>
+    <style>
+        #div1{width: 200px;height: 100px; background: #cccccc;border: 1px solid rgb(175, 131, 131);
+display: none;}
+#div2{width: 200px;height: 100px; background: #cccccc;border: 1px solid rgb(175, 131, 131);
+display: block;}
+</style>
+<script>
+function toGreen()
+{
+    document.getElementById('div2').style.background='green'
+}
+function toRed()
+{
+    var a=document.getElementById('div2');
+    a.style.background='gray'
+}
+</script>
+</head>
+
+<body>
+    <input type="checkbox"  onmouseover="document.getElementById('div1').style.display='block'" 
+    onmouseout="document.getElementById('div1').style.display='none'"/>
+    <div id="div1" onmouseover="document.getElementById('div1').style.width='300px'"
+    onmouseout="document.getElementById('div1').style.width='100px'">
+        为了你的安全
+    </div>
+    <div id="div2" onmouseover="toGreen()"  onmouseout="toRed()">
+        为了你的安全...
+    </div>
+    <input type="button" value="确定" onclick="alert('Hello world')"/>
+
+    
+</body>
+
+
+</html>
